@@ -99,7 +99,13 @@
                     <span id="get-details-section-name"></span><br>
                     <p style="text-align: justify; text-indent: 50px;">
                         We are delighted to invite you to our engagement ceremony and would be honored by your gracious presence. Please join us to celebrate this special occasion and bless us with your love and good wishes.
-                    </p>                </div>
+                    </p>                
+                </div>
+                <div class="text-end mb-3 pe-3">
+                    <a href="images/Invitation.jpg" style="text-decoration: none;" download>
+                        <i class="bi bi-download"></i> Click here to download
+                    </a>
+                </div>
                 <div class="container text-center">
                     <button class="btn btn-dark" onclick="showDetails()" >Get Details</button>
                     <div class="mt-3" id="details-output"></div>
@@ -193,10 +199,11 @@
                 
                 const detailsHTML = `
                     <div class="row mt-4 justify-content-center">
+        
                         <div class="col-md-6 mb-3" id="get-details-section-card">
                             <div class="card h-100">
                                 <div class="card-body">
-                                    <h5 class="card-title">Invitation Details</h5>
+                                    <h5 class="card-title">Engagement Details</h5>
                                     <table class="table table-bordered">
                                         <tr>
                                             <th>Engagement of</th>
@@ -212,22 +219,51 @@
                                         </tr>
                                         <tr>
                                             <th><i class="bi bi-geo-alt-fill"></i> Venue</th>
-                                            <td>At. Post Bhayawadi, Betul, Madhya Pradesh 460440</td>
+                                            <td>At. Post Silpati, Betul, Madhya Pradesh 460440</td>
                                         </tr>
                                     </table>
                                     <p class="mt-3 text-success fw-bold">We look forward to seeing you there!</p>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-md-6 mb-3">
+        
+                        <div class="col-md-6 mb-3" id="get-details-section-card">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Weding Details</h5>
+                                    <table class="table table-bordered">
+                                        <tr>
+                                            <th>Engagement of</th>
+                                            <td>Devanand Malaiya & Ankita Verma</td>
+                                        </tr>
+                                        <tr>
+                                            <th><i class="bi bi-calendar-event"></i> Weding Date</th>
+                                            <td> 05th May 2025</td>
+                                        </tr>
+                                        <tr>
+                                            <th><i class="bi bi-clock-fill"></i> Time</th>
+                                            <td>6:00 PM onwards</td>
+                                        </tr>
+                                        <tr>
+                                            <th><i class="bi bi-geo-alt-fill"></i> Venue</th>
+                                            <td>At. Post Silpati, Betul, Madhya Pradesh 460440</td>
+                                        </tr>
+                                    </table>
+                                    <p class="mt-3 text-success fw-bold">We look forward to seeing you there!</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="row mt-4 justify-content-center">
+                        <div class="col-md-12 mb-3">
                             <div class="card h-100">
                                 <div class="card-body p-0">
                                     <iframe 
                                         width="100%" 
                                         height="100%" 
                                         style="border:0; min-height: 300px;" 
-                                        src="https://maps.google.com/maps?q=Bhyawadi,%20Betul,%20Madhya%20Pradesh%20460440&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                                        src="https://maps.google.com/maps?q=Silpati,%20Betul,%20Madhya%20Pradesh%20460440&t=&z=15&ie=UTF8&iwloc=&output=embed" 
                                         frameborder="0" 
                                         allowfullscreen>
                                     </iframe>
