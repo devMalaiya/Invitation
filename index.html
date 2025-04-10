@@ -40,6 +40,26 @@
                 scroll-margin-top: 80px; 
             }
             
+            .chatbot-btn {
+                position: fixed;
+                bottom: 100px;
+                right: 20px;
+                background-color: #343a40;
+                color: white;
+                padding: 17px;
+                border-radius: 50%;
+                font-size: 24px;
+                cursor: pointer;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+                z-index: 999;
+                height: 60px;
+                width: 60px;
+            }
+
+            .chatbot-btn:hover {
+                background-color: #555;
+            }
+            
             
         </style>
     </head>
@@ -111,6 +131,11 @@
                     <div class="mt-3" id="details-output"></div>
                 </div>
             </section>
+            
+            <!-- chat section Button -->
+            <div id="chatbot-btn" class="chatbot-btn">
+                <i class="bi bi-chat-square-text"></i>
+            </div>
 
         </main>
 
@@ -278,6 +303,14 @@
                     document.getElementById('get-details-section-card').scrollIntoView({ behavior: 'smooth' });
                 }, 100);
             }
+
+            /* Chatbot Button click event to open WhatsApp */
+            document.getElementById('chatbot-btn').addEventListener('click', function () {
+                const phoneNumber = "7898750819"; 
+                const message = "Hello, Devanand Malaiya"; 
+                const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                window.open(whatsappLink, "_blank");
+            });
 
 
         </script>
